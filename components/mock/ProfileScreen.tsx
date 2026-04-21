@@ -7,6 +7,7 @@ import {
   darkPalette,
   type Palette,
 } from "./DashboardScreen";
+import { asset } from "@/lib/base-path";
 
 export function ProfileScreen({ dark = false }: { dark?: boolean }) {
   const palette: Palette = dark ? darkPalette : lightPalette;
@@ -40,7 +41,7 @@ export function ProfileScreen({ dark = false }: { dark?: boolean }) {
           style={{ background: palette.surface }}
         >
           <Image
-            src="/avatars/cartoon/cartoon_11.svg"
+            src={asset("/avatars/cartoon/cartoon_11.svg")}
             alt=""
             width={56}
             height={56}

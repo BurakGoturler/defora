@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Clock4, ArrowUp } from "lucide-react";
 import { type Dict } from "@/lib/dictionaries";
+import { asset } from "@/lib/base-path";
 
 export function CTASection({ dict }: { dict: Dict["cta"] }) {
   return (
@@ -23,7 +24,7 @@ export function CTASection({ dict }: { dict: Dict["cta"] }) {
       >
         <div className="inline-flex mb-6">
           <Image
-            src="/brand/logo.gif"
+            src={asset("/brand/logo.gif")}
             alt="Defora"
             width={96}
             height={96}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { type Dict } from "@/lib/dictionaries";
+import { asset } from "@/lib/base-path";
 import { PROFESSION_AVATARS } from "@/lib/profession-avatars";
 
 type Tab = "cartoon" | "profession";
@@ -126,7 +127,7 @@ function CartoonMarquee({
             className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white border border-border overflow-hidden shrink-0 p-1 shadow-sm hover:scale-110 hover:shadow-lg transition-transform"
           >
             <Image
-              src={`/avatars/cartoon/${id}.svg`}
+              src={asset(`/avatars/cartoon/${id}.svg`)}
               alt=""
               width={80}
               height={80}

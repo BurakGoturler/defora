@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { type Dict } from "@/lib/dictionaries";
+import { asset } from "@/lib/base-path";
 
 export function Footer({ dict }: { dict: Dict["footer"] }) {
   // Pathname'den mevcut lang'i çıkar — hem /tr hem /en doğru privacy'ye
@@ -18,7 +19,7 @@ export function Footer({ dict }: { dict: Dict["footer"] }) {
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           <div className="flex items-start gap-3">
             <Image
-              src="/brand/logo.gif"
+              src={asset("/brand/logo.gif")}
               alt="Defora"
               width={48}
               height={48}

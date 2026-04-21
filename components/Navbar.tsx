@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { type Dict, type Lang } from "@/lib/dictionaries";
+import { asset } from "@/lib/base-path";
 
 export function Navbar({ dict, lang }: { dict: Dict["nav"]; lang: Lang }) {
   const pathname = usePathname();
@@ -15,7 +16,7 @@ export function Navbar({ dict, lang }: { dict: Dict["nav"]; lang: Lang }) {
       <nav className="mx-auto max-w-6xl flex items-center justify-between px-6 py-3">
         <Link href={`/${lang}`} className="flex items-center gap-2 group">
           <Image
-            src="/brand/logo.gif"
+            src={asset("/brand/logo.gif")}
             alt="Defora"
             width={36}
             height={36}

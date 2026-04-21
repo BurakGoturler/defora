@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { clsx } from "clsx";
 import Image from "next/image";
+import { asset } from "@/lib/base-path";
 
 const CHART_BARS = [42, 65, 38, 88, 55, 100]; // Son 6 ay
 const MONTHS = ["Kas", "Ara", "Oca", "Şub", "Mar", "Nis"];
@@ -40,7 +41,7 @@ export function DashboardScreen({
         style={{ color: palette.text }}
       >
         <Image
-          src="/avatars/cartoon/cartoon_11.svg"
+          src={asset("/avatars/cartoon/cartoon_11.svg")}
           alt=""
           width={42}
           height={42}
