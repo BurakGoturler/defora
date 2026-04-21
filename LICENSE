@@ -1,0 +1,37 @@
+MIT License
+
+Copyright (c) 2026 Burak Aksu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+TRADEMARK NOTICE
+
+The "Defora" name, logo and any related brand assets (including but not
+limited to `public/brand/logo.gif`, `public/brand/logo.png`, cartoon avatar
+artwork in `public/avatars/cartoon/`) are NOT covered by this MIT License.
+
+These brand assets remain the exclusive property of Burak Aksu / Defora.
+You may not use them to identify, promote or market your own products or
+services, or in any manner that implies endorsement by Defora, without
+explicit prior written permission.
+
+The cartoon avatar SVGs were generated using DiceBear (dicebear.com) and
+are subject to DiceBear's own license terms in addition to this notice.

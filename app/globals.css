@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Mobil uygulamayla bire bir aynı marka renkleri + pastel nötrler */
+@theme {
+  /* Marka */
+  --color-primary: #1a2b4a;
+  --color-primary-light: #2d4270;
+  --color-accent: #2ecc8b;
+  --color-accent-soft: #e8f9f1;
+
+  /* İş pipeline durum renkleri (app'teki karşılıkları) */
+  --color-status-talk: #8b9bb4;
+  --color-status-ok: #3b82f6;
+  --color-status-doing: #f59e0b;
+  --color-status-done: #8b5cf6;
+  --color-status-paid: #2ecc8b;
+
+  /* Aydınlık tema nötrleri (site varsayılan) */
+  --color-bg: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f0f2f5;
+  --color-border: #e2e8f0;
+  --color-text: #1a2b4a;
+  --color-text-soft: #64748b;
+  --color-text-hint: #adb5c7;
+
+  /* Karanlık tema karşılıkları — theme demo section kullanıyor */
+  --color-dark-bg: #0f1626;
+  --color-dark-surface: #1b2236;
+  --color-dark-surface-alt: #252d44;
+  --color-dark-border: #323b54;
+  --color-dark-text: #e6eaf2;
+  --color-dark-text-soft: #9aa6be;
+
+  /* Ölçüler */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* Plus Jakarta Sans uygulamayla aynı yazı tipi */
+  --font-display: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Güzel bir scroll experience için */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Seçim rengi marka */
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* Viewport'a giren elemanlar için fade-up utility */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+/* Dashboard grafikteki çubuk yükselişi */
+@keyframes bar-grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
