@@ -7,9 +7,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
 **Defora** mobil uygulamasının (Flutter + Firebase) resmi tanıtım sitesi.
-Tamamen statik, SEO dostu ve **TR / EN** destekli.
 
-🌐 **Canlı**: [defora.tr](https://defora.tr)
+🌐 **Canlı**: [defora]([https://defora.tr](https://burakgoturler.github.io/defora/tr/))
 
 ---
 
@@ -23,14 +22,6 @@ Tamamen statik, SEO dostu ve **TR / EN** destekli.
 - 📊 **Scroll-reveal animasyonları** (Framer Motion)
 - 🔒 Tam **KVKK / GDPR uyumlu gizlilik politikası** sayfası
 - ⚡ **Statik export** — herhangi bir CDN'de saniyede yüklenir
-
----
-
-## 🔒 Gizlilik politikası
-
-KVKK + GDPR uyumlu tam metin [`lib/dictionaries.ts`](./lib/dictionaries.ts) →
-`privacyPolicy` anahtarı altında. Düzenlemek için oradan değiştir, statik HTML
-otomatik üretilir.
 
 ---
 
