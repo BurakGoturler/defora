@@ -6,25 +6,11 @@
 [![Framer Motion](https://img.shields.io/badge/Framer-Motion-0055FF?logo=framer)](https://www.framer.com/motion/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-**Defora** mobil uygulamasının (Flutter + Firebase) resmi tanıtım sitesi.
+**Defora** mobil uygulamasının resmi tanıtım sitesi.
 
 🌐 **Canlı**: [defora]([https://defora.tr](https://burakgoturler.github.io/defora/tr/))
 
 ---
-
-## ✨ Özellikler
-
-- 🇹🇷 🇬🇧 **Çift dilli** — TR öncelikli, EN toggle
-- 📱 **HTML/CSS ile yeniden yaratılmış telefon mockup'ları** (uygulama güncellendiğinde screenshot yenilemeye gerek yok)
-- 🎨 Uygulama ile **birebir aynı renk paleti** (`#1A2B4A` primary, `#2ECC8B` accent)
-- 🌓 **İnteraktif light/dark tema demo** (tıkla, dashboard anında değişsin)
-- 🎠 60 cartoon + 60 meslek **avatar showcase** (sonsuz scroll marquee)
-- 📊 **Scroll-reveal animasyonları** (Framer Motion)
-- 🔒 Tam **KVKK / GDPR uyumlu gizlilik politikası** sayfası
-- ⚡ **Statik export** — herhangi bir CDN'de saniyede yüklenir
-
----
-
 ## 📄 Lisans
 
 [MIT](./LICENSE) © 2026 Burak Götürler / Defora
